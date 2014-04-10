@@ -1,0 +1,19 @@
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'war'
+apply plugin: 'jetty'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile "org.springframework:spring-webmvc:4.0.2.RELEASE",
+            "javax.servlet:servlet-api:2.5",
+            "com.google.guava:guava:11.0.2",
+            "javax.servlet.jsp:jsp-api:2.1"
+
+    testCompile "junit:junit:4.8.2"
+
+    testCompile "junit:junit:4.8.2"
+}
